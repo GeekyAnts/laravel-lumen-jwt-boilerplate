@@ -1,14 +1,14 @@
-# A Sample Boilerplate for yor Web & API server built in PHP Tech Stack:
+# A Boilerplate for yor Web & API server built using PHP Tech
 
 
-# What is needed to setup?
+## What is needed to setup?
 
 1. PHP >=7.1 with extension requirements given as in Laravel's documentation.
 2. Node & NPM LTS Stable Release.
 3. Composer Stable Release.
 4. Any Database of your choice, I have used MySQL.
 
-# How you can install? 
+## How you can install? 
 
 ```sh
 # Installs all the necessary packages required to run the app
@@ -34,7 +34,7 @@
 > npm install;
 ```
 
-# How to run the app?
+## How to run the app?
 
 ```sh
 # You can either run it on localhost or you can have the virtualhost configuration 
@@ -42,21 +42,21 @@
 php artisan serve
 ```
 
-# How can you see Web routes?
+## How can you see Web routes?
 
 ```sh
 # Lists all the web routes defined for your web-app
 php artisan route:list
 ```
 
-# How can you see API routes?
+## How can you see API routes?
 
 ```sh
 # Lists all the api routes defined for your web-app
 php artisan api:rotue
 ```
 
-# What this repo contains?
+## What this repo contains?
 
 1. E-Mail Verification/Confirmation for new users.
 2. JWT Setup for your APIs.
