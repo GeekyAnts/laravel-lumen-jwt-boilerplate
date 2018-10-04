@@ -23,7 +23,7 @@
 # How to run the app?
 
 ```sh
-# You can either run it no localhost or you can have the virtualhost configuration 
+# You can either run it on localhost or you can have the virtualhost configuration 
 # in a server of your choice (We prefer nginx / apache)
 php artisan serve
 ```
