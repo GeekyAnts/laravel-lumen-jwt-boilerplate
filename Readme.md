@@ -14,6 +14,8 @@
 > composer install;
 > cp -fR .env.example .env;
 > chmod -fR 777 bootstrap/ storage/;
+> php artisan key:generate;
+> php artisan jwt:secret;
 > php artisan migrate;
 > npm install;
 ```
@@ -21,6 +23,8 @@
 # How to run the app?
 
 ```sh
+# You can either run it no localhost or you can have the virtualhost configuration 
+# in a server of your choice (We prefer nginx / apache)
 php artisan serve
 ```
 
