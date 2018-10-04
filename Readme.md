@@ -62,3 +62,7 @@ php artisan api:rotue
 2. JWT Setup for your APIs.
 3. Transform Request Middleware for your boolean inputs in requests.
 4. Basic Contracts to Repositories binding sample for Auth Logic.
+
+## License
+
+MIT License GeekyAnts 2018
