@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+use App\Traits\JWT as JWTTrait;
+
 class User extends Authenticatable
 {
-    use Notifiable;
+    use JWTTrait, Notifiable;
 
     /**
      * The attributes that are mass assignable.
