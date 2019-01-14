@@ -34,6 +34,25 @@ class TokenController extends Controller
         ]);
     }
 
+    public function logoutOtherDevices(Request $request)
+    {
+        $creds = request(['password']);
+
+        $rules = [
+            'password' => 'required'
+        ];
+
+        $validator = Validator::make($creds, $rules);
+        if ($validator->fails() ) {
+            return response()->json([
+                'success' => false, 
+                'error' => $validator->messages()
+            ], 401);
+        }
+
+        auth('api')->logoutOtherDevices($creds['password']);
+    }
+
     /**
      * Refresh a token.
      *
